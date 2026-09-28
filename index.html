@@ -25,6 +25,20 @@ input,button,select{font-family:inherit}
 @keyframes scShine{0%{left:-160px}55%,100%{left:110%}}
 #scoop-grid{scroll-margin-top:118px}
 html,body{overflow-x:clip}
+/* phone layout: header wraps (logo+buttons / search / tabs), tighter gutters */
+@media (max-width:760px){
+  header>div:first-child{flex-wrap:wrap!important;height:auto!important;padding:8px 16px 0!important;gap:8px 12px!important}
+  header>div:first-child>div:nth-child(4){margin-left:auto!important;gap:8px!important}
+  header>div:first-child>div:nth-child(4)>span:first-child{display:none!important}
+  header>div:first-child>div:nth-child(3){order:3;flex:1 1 100%!important;max-width:none!important}
+  header>div:first-child>nav{order:4;flex:1 1 100%;overflow-x:auto;height:40px!important;margin:0 -8px}
+  header>div:first-child>nav button{padding:0 10px!important;white-space:nowrap}
+  main{padding:20px 16px 56px!important}
+  main h1{font-size:38px!important}
+  aside{position:static!important;flex:1 1 100%!important}
+}
+
+
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important}}
 </style>
 </helmet>
