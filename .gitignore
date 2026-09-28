@@ -1,0 +1,6 @@
+# local-only: saved store feeds (57 MB), image-score cache, preview config
+tools/feeds/
+tools/img_scores.json
+tools/gen_catalog.js
+.claude/
+__pycache__/
